@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OD FORM</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@200&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+            margin: 0;
+            padding: 0;
+		}
+		body{
+			background-image: url('pic3.jpg');
+			background-position: center;
+			background-size: cover;
+			font-family:'Texturina', serif;
+			margin-top: 40px;
+		}
+		form{
+			padding: 10px;
+		}
+
+		.odform{
+			width:700px;
+			background-color:rgb(0,0,0,1);
+			margin: auto;
+			padding: 10px 0px;
+			color:#ffffff;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+		}
+		.main{
+			background-color: rgb(0,0,0,0.5);
+			width: 700px;
+			margin: auto;
+		}
+        #name{
+        	width:100%;
+        
+        }
+        .name{
+           margin-left: 10px;
+           margin-top: 15px;
+        	width: 125px;
+        	color:white;
+        	font-size: 18px;
+        	font-weight:700;
+        }
+        .firstname{
+        	position: relative;
+        	left:200px;
+        	top: -25px;
+        	border-radius:6px;
+        	font-size:16px;
+        }
+        .lastname{
+        	position: relative;
+        	left:200px;
+        	top:-28px;
+        	border-radius:6px;
+        	font-size:16px;
+        }
+        .firstlabel{
+        	position: relative;
+        	left:50px;
+        	color: white;
+        	font-size:14px;
+        }
+        .lastlabel{
+        	position: relative;
+        	left:50px;
+        	color: white;
+        	font-size:14px;
+        }
+        .reg{
+            position: relative;
+            left: 200px;
+            top:-37px;
+            border-radius: 6px;
+            font-size:16px;
+        }
+        .email{
+            position: relative;
+            left: 200px;
+            top:-37px;
+            border-radius: 6px;
+            font-size:16px;
+        }
+        .startdate{
+        	position: relative;
+        	left:200px;
+        	top: -25px;
+        	border-radius:6px;
+        	font-size:16px;
+        }
+        .enddate{
+        	position: relative;
+        	left:350px;
+        	top:-50px;
+        	border-radius:6px;
+        	font-size:16px;
+        }
+        .startlabel{
+        	position: relative;
+        	left:250px;
+        	top:-20px;
+        	color: white;
+        	font-size:14px;
+        }
+        .endlabel{
+        	position: relative;
+        	left:200px;
+        	top:-20px;
+        	color: white;
+        	font-size:14px;
+        }
+        .reason{
+            position: relative;
+            left: 200px;
+            top:-30px;
+            line-height: 30px;
+            border-radius: 6px;
+            font-size:16px;
+        }
+        .btn
+         {
+         	position: relative;
+         	top:10px;
+         	left:50px;
+            background:#00b894;
+            color: white;
+            display: inline-block;
+            border: none;
+            font-size: 16px;
+            padding: 5px; 
+            text-align: center;
+            border-radius: 6px;
+         }
+	</style>	
+</head>
+<body>
+	<div class="odform"><h1>OD FORM</h1></div>
+	  <div class="main">
+	  	<form >
+	  		<div id="name">
+	  			<h2 class="name">Name</h2>
+	  			<input class="firstname" type="text" name="first_name" required>
+	  			<label class="firstlabel">First name</label>
+	  			<input class="lastname" type="text" name="last_name" required>
+	  			<label class="lastlabel">Last name</label>
+            </div>
+            
+            <h2 class="name">Register Number</h2>
+            <input class="reg" type="text" name="reg" required >
+
+            <h2 class="name">E-mail</h2>
+            <input type="text" name="email" class="email" required>
+            
+            <h2 class="name">OD Date</h2>
+	  		<input class="startdate" type="date" name="start_date" required><br>
+	  		<label class="startlabel">From</label>
+	  		<input class="enddate" type="date" name="end_date" required>
+	  		<label class="endlabel">To</label>
+
+	  		<h2 class="name">Reason</h2>
+	  		<input type="text" class="reason" name="reason" required>
+
+	  		<strong><button class="btn" type="submit">SUBMIT</button></strong>
+        </form>
+       </div> 
+</body>
+</html>
